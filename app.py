@@ -14,12 +14,20 @@ le_dev = data['le_dev']
 le_education = data['le_education']
 
 def show_predict_page():
-    # Set background color
+    # Set background color and text color
     st.markdown(
         """
         <style>
         .main {
-            background-color: #f0f8ff;
+            background: linear-gradient(to bottom, #001f3f, #001a33);
+            color: white;
+        }
+        .stButton button {
+            background-color: #004080;
+            color: white;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
         }
         </style>
         """,
@@ -60,8 +68,6 @@ def show_predict_page():
         'Developer, mobile',
         'Developer, desktop or enterprise applications',
         'Engineer, site reliability',
-        'Other',
-        'Other (please specify):',
         'Developer, embedded applications or devices',
         'Engineering manager',
         'DevOps specialist',
